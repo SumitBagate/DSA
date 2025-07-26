@@ -141,3 +141,7 @@ cout<<endl;
 
 
 return 0;}
+
+
+// Time complexity of the above code is O(n) where n is the number of nodes in the tree.
+// Space complexity of the above code is O(n) where n is the number of nodes in the tree.

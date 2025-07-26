@@ -1,23 +1,22 @@
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-
-void solve1()
-{
-
-    cout << "solve1" << endl;
-}
-
-void solve2()
-{
-
-    cout << "solve2" << endl;
-}
 int main()
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    solve1();
-    solve2();
-    return 0;
-}
+{    int x;
+       int reverse=0;
+       cout<<"enter x:-" ;
+           cin>>x;
 
+    if(x<0)
+    {
+   return false;
+
+    };
+    while(x!=0)
+    {  int remainder=x%10;
+       int reverse=reverse*10+remainder;
+       x=x/10;
+       cout <<reverse;
+    }
+
+
+return 0;}
