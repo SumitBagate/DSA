@@ -1,12 +1,5 @@
-
-// void selectionsort( int a[],int n)
-// {
-// // for (int i;i<n;i++)
-// // {
-// //     int min=i;
-    
-// // // }
-// // cout<<int  a[];
-// // return 0;
-
-// }
+ cout << "After selection sort: " << "\n";
+  for (int i = 0; i < N; i++) {
+    cout << arr[i] << " ";
+  }
+  cout << "\n";
