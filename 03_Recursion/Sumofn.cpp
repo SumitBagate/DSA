@@ -8,16 +8,49 @@ using namespace std;
 
 // }
 
-int fact( int n)
+int cnt = 0;
+void fun(int i,int  N)
 {
-    if(n==0) return 1;
-    return n*fact(n-1);
+
+   //print n to 1
+
+   if (i<1)
+    return;
+    cout<<i;
+   fun(i-1,N);
+    
+    
+
+
+   //base condition 
+   // if(cnt==5)
+   //  return 0;
+   
+   // cnt++;
+   // cout<<cnt;
+   // fun();
 }
 
 int main()
-{  int n;
-   cin>>n;
-//    cout<<sum(n);
-   cout<<fact(n);
+{  int i ;
+   int N;
+   cin>>N;
+   cin>>i;
+
+   fun(i ,N);
+
+
+
+// int fact( int n)
+// {
+//     if(n==0) return 1;
+//     return n*fact(n-1);
+// }
+
+// int main()
+// {  int n;
+//    cin>>n;
+// //    cout<<sum(n);
+//    cout<<fact(n);
    return  0;
 }

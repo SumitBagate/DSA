@@ -10,7 +10,7 @@ class Node{
     //To  intialize  the  Node  we  use  constructor 
     Node(int val)
     {
-        Data =value ;
+        Data = val ;
         lchild =nullptr;
         Rchild =nullptr;
     }
@@ -20,9 +20,9 @@ class Node{
 Node*CreatTree()
 {
     int  x;
-    cout<<"enter  "-1"   for  no node "<<endl;
+    cout<<"enter  -1   for  no node "<<endl;
     cin >> x;
-    if(x=-1)
+    if(x == -1)
     {
       return  nullptr;
     }
@@ -43,8 +43,8 @@ void preorder(Node*root)
 {
     if(root ==nullptr) return;
     cout<<root->Data<<" ";
-    preorder(root*lchild);
-    preorder(root*Rchild);
+    preorder(root->lchild);
+    preorder(root->Rchild);
 }
 
 
