@@ -48,7 +48,7 @@ public:
     void  display()
     
     {
-          cout << "Inorder Traversal of the Tree: ";
+        cout << "Inorder Traversal of the Tree: ";
         inorderTraversal(root);
         cout << endl;
     }
@@ -87,4 +87,7 @@ int main()
  Tree t;
  t.createTree();
  t.display();
-return 0;}
+
+ return 0;
+
+}

@@ -23,7 +23,7 @@ int main()
     while (q--)
     {
         int number;
-        -cin >> number;
+        cin >> number;
         // fetching:
         cout << hash[number] << endl;
     }
