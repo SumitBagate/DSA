@@ -1,2 +1,1 @@
-
-   return(reverse)
+   p2 =p2*2;

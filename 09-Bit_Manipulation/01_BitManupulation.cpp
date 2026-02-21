@@ -29,14 +29,19 @@ return 0;} */
 
 
 //!-----------------------------Binary to decimal---------------------------------
-
+/* 
 int BinaryToDecimal(string n)
 {
     int len=n.size();
     int res =0;
-   for(int i=0;i<len;i++){
-      1 res =res*2+(n[i]-'0');
+    int  p2 =1;
+   for(int i=len-1;i>=0;i--){
+         if(n[i]=='1'){
+          res =res+p2;
+        }
+        p2 =p2*2;
    }
+
    return res;
      
 }
@@ -45,5 +50,32 @@ int main()
 { string n;
     cin>>n;
     cout<<BinaryToDecimal(n);
+return 0;
+} */
+
+//!------------------swap_two_numbers-------------------------
+
+#include<iostream>
+using namespace std;
+
+int swap(int a ,int b){
+ 
+  a=a^b;
+  b=a^b;
+  a=a^b;
+
+  cout<<a<<" "<<b<<" ";
+}
+
+
+int main()
+{  int a ;
+  int b ;
+  cout <<"enter a";
+  cin>>a ;
+  cout<<"enter b";
+  cin>>b;
+
+  swap(a,b);
 return 0;
 }
