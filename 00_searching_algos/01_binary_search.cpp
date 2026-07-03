@@ -1,0 +1,46 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+
+
+int Binary_search(vector<int>&arr, int a,int x)                v   
+   {
+
+        int low = 0;
+        int high = a-1;
+
+        while (low <= high)
+            {
+                int mid = low + (high - low ) / 2;
+
+                if (arr[mid] == x)
+                    {
+                        return mid;
+                    }
+                if (arr[mid] < x)
+                    {
+                         low = mid + 1;
+                    }
+                else{
+                    high  = mid =1;
+                }
+
+                return -1;
+            }
+
+    }
+
+int main()
+{   
+    int x ;
+    cin >> x ;
+    vector<int>arr;
+    arr = { 2, 3, 4, 10, 40 };
+    int a =arr.size();
+   int result =  Binary_search(arr,a,x);
+    if(result == -1 )cout<< "not  present ";
+    else cout << "present  at " << result ;
+
+    return  0;
+}
