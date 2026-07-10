@@ -5,9 +5,7 @@ class Node{
    public:
     int Data;
     Node*lchild;
-    Node*Rchild;
-
-    //To  intialize  the  Node  we  use  constructor 
+    Node*Rchild  //To  intialize  the  Node  we  use  constructor 
     Node(int val)
     {
         Data = val ;
@@ -46,15 +44,6 @@ void preorder(Node*root)
     preorder(root->lchild);
     preorder(root->Rchild);
 }
-
-
-
-
-
-
-
-
-
 
 int main()
 {
